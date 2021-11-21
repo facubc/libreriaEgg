@@ -2,15 +2,15 @@
 body{
     background-color: #90AFC5;
 }
-
+a { 
+    color: inherit; 
+}
 .navegacion{
-    background-color: #336b87;
-    
+    background-color: #336b87;    
 }
 .color_fuente{
     color: #763626;
 }
-
 
 .carta{
     background-color: #AE6653;
