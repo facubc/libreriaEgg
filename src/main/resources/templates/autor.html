@@ -54,7 +54,7 @@
                                 <i th:unless="${autor.alta}" class="bi bi-hand-thumbs-down-fill"></i>
                             </td>
                             <td>
-                                <a th:href="@{/autor/modificar}"><i class="bi bi-hammer"></i></a>
+                                <a th:href="@{/autor/modificar/__${autor.id}__}"><i class="bi bi-hammer"></i></a>
                             </td>
                         </tr>
                     </tbody>

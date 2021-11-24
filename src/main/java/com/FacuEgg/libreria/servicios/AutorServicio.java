@@ -71,5 +71,9 @@ public class AutorServicio {
     public List<Autor> listar(){
         return autorRepositorio.findAll();
     }
+    
+    public Autor getOne(String id){
+        return autorRepositorio.getById(id);
+    }
 
 }

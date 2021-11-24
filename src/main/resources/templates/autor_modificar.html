@@ -41,12 +41,13 @@
             <div th:if="${exito}!=null" class="alert alert-success" role="alert">
                 <p class="card-text text-center" th:text="${exito}"></p>
             </div>
-            <form class="mt-4" th:action="@{/autor/carga}" method="POST">
+            <form class="mt-4" th:action="@{/autor/modificar/__${autor.id}__}" method="POST">
 
                 <div class="form-row">
                     <div class="form-group col-md-6">
+                        <input hidden th:value="${id}" name="id">
                         <label for="nombre">Nombre</label>
-                        <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese nombre de Autor">
+                        <input type="text" class="form-control" name="nombre" id="nombre" th:value="${autor.nombre}">
                     </div>
                 </div>
 
